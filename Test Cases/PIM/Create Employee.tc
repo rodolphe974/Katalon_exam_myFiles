@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Create Employee</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>51a39b98-582c-4932-9d59-b24888133f33</testCaseGuid>
+   <variable>
+      <defaultValue>'pizza'</defaultValue>
+      <description></description>
+      <id>58d56dae-bb72-4c49-a445-b1e21ec502fd</id>
+      <masked>false</masked>
+      <name>employeeFirstName</name>
+   </variable>
+   <variable>
+      <defaultValue>'employee_0_0_0'</defaultValue>
+      <description></description>
+      <id>de158f68-bd90-4da8-b6d4-4bf1a153f282</id>
+      <masked>false</masked>
+      <name>employeeLastName</name>
+   </variable>
+</TestCaseEntity>
