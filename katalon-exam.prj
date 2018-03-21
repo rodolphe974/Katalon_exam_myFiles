@@ -5,4 +5,21 @@
    <tag></tag>
    <UUID>fbabf945-33b8-4bdd-83ee-afdbcc0d539d</UUID>
    <pageLoadTimeout>0</pageLoadTimeout>
+   <recentExpandedTreeEntityIds>Test Cases</recentExpandedTreeEntityIds>
+   <recentExpandedTreeEntityIds>Test Cases/PIM</recentExpandedTreeEntityIds>
+   <recentExpandedTreeEntityIds>Object Repository</recentExpandedTreeEntityIds>
+   <recentExpandedTreeEntityIds>Object Repository/Page_OrangeHRM</recentExpandedTreeEntityIds>
+   <recentExpandedTreeEntityIds>Object Repository/PIM</recentExpandedTreeEntityIds>
+   <recentExpandedTreeEntityIds>Test Suites</recentExpandedTreeEntityIds>
+   <recentExpandedTreeEntityIds>Test Suites/PIM</recentExpandedTreeEntityIds>
+   <recentExpandedTreeEntityIds>Reports</recentExpandedTreeEntityIds>
+   <recentExpandedTreeEntityIds>Reports/PIM</recentExpandedTreeEntityIds>
+   <recentExpandedTreeEntityIds>Reports/PIM/Delete Employees</recentExpandedTreeEntityIds>
+   <recentOpenedTreeEntityIds>Test Suites/PIM/Delete Employees</recentOpenedTreeEntityIds>
+   <recentOpenedTreeEntityIds xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+   <recentOpenedTreeEntityIds>Test Suites/PIM/Create Employees</recentOpenedTreeEntityIds>
+   <recentOpenedTreeEntityIds xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+   <recentOpenedTreeEntityIds>Test Cases/PIM/Delete Employee</recentOpenedTreeEntityIds>
+   <recentOpenedTreeEntityIds>Test Cases/PIM/Create Employee</recentOpenedTreeEntityIds>
+   <recentOpenedTreeEntityIds>Test Cases/PIM/Find Employee</recentOpenedTreeEntityIds>
 </Project>

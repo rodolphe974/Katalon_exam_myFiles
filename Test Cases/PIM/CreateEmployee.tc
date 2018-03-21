@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Create Employee</name>
+   <name>CreateEmployee</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>51a39b98-582c-4932-9d59-b24888133f33</testCaseGuid>

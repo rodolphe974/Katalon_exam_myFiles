@@ -21,20 +21,20 @@ import org.openqa.selenium.Keys as Keys
 import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.logging.KeywordLogger as KeywordLogger
 
-String employeeName  = employeeFirstName + ' ' + employeeLastName
+String employeeName = (employeeFirstName + ' ') + employeeLastName
 
-int count = WebUI.callTestCase(findTestCase('PIM/Find Employee'), [('employeeName') : employeeName])
+int count = WebUI.callTestCase(findTestCase('PIM/FindEmployee'), [('employeeName') : employeeName, ('matchExact') : true])
 
 assert count == 0
 
-WebUI.callTestCase(findTestCase('Common/GoToUrl'), [('url') : 'http://opensource.demo.orangehrmlive.com/index.php/pim/addEmployee'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common/GoToUrl'), [('url') : GlobalVariable.addEmployeeUrl])
 
-WebUI.setText(findTestObject('PIM/Add Employee/input_firstName'), employeeFirstName)
+WebUI.setText(findTestObject('PIM/AddEmployee/input_firstName'), employeeFirstName)
 
-WebUI.setText(findTestObject('PIM/Add Employee/input_lastName'), employeeLastName)
+WebUI.setText(findTestObject('PIM/AddEmployee/input_lastName'), employeeLastName)
 
-WebUI.click(findTestObject('PIM/Add Employee/input_btnSave'))
+WebUI.click(findTestObject('PIM/AddEmployee/input_btnSave'))
 
-count = WebUI.callTestCase(findTestCase('PIM/Find Employee'), [('employeeName') : employeeName])
+count = WebUI.callTestCase(findTestCase('PIM/FindEmployee'), [('employeeName') : employeeName, ('matchExact') : true])
 
 assert count == 1

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>FindEmployee</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a78d173e-42d5-4604-97d2-789567797daf</testCaseGuid>
+   <variable>
+      <defaultValue>'p'</defaultValue>
+      <description></description>
+      <id>89acbb9a-fb13-4ca9-a743-99bc7d128005</id>
+      <masked>false</masked>
+      <name>employeeName</name>
+   </variable>
+   <variable>
+      <defaultValue>false</defaultValue>
+      <description></description>
+      <id>31b7e11c-d798-4029-905f-79957fdbbe43</id>
+      <masked>false</masked>
+      <name>matchExact</name>
+   </variable>
+</TestCaseEntity>

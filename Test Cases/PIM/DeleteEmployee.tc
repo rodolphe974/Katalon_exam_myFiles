@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Delete Employee</name>
+   <name>DeleteEmployee</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>c1cf51ed-fa2f-44ee-a991-174f4fef67e7</testCaseGuid>
