@@ -42,7 +42,9 @@ WebUI.waitForElementVisible(findTestObject('PIM/EmployeeList/input_empsearchempl
 
 WebUI.click(findTestObject('PIM/EmployeeList/input_empsearchemployee_nameem'))
 
-WebUI.setText(findTestObject('PIM/EmployeeList/input_empsearchemployee_nameem'), employeeName)
+WebUI.sendKeys(findTestObject('PIM/EmployeeList/input_empsearchemployee_nameem'), employeeName)
+
+WebUI.click(findTestObject('PIM/EmployeeList/input_empsearchid'))
 
 WebUI.waitForElementClickable(findTestObject('PIM/EmployeeList/input_btnSearch'), GlobalVariable.timeOut)
 

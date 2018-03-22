@@ -9,6 +9,10 @@ executed within Katalon Studio and of course you should create test cases,
 test suites and so on. The Katalon Studio project should be stored as a
 project in your personal GitHub account, so it can be verified later on.
 
+In the exam there is no need to use the Spy Web. The Record Web is not
+necessary too. All Web objects who need to be used are already in the Object
+Repository.
+
 
 EXERCISE 1 - PIM -> Create employees
 
@@ -17,6 +21,45 @@ Login with Admin and create 5 employees: first name "pizza" and last name
 number and Z between 1 and 5. Check the existence of your employee before and
 after the creation.
 
+Detailed steps:
+
+- Create a test case PIM/CreateEmployee with a first name and last name
+  test case variable (employeeFirstName and employeeLastName respectively).
+
+- Call the existing test case PIM/FindEmployee to verify that the employee
+  does not yet exist:
+
+	  String employeeName = (employeeFirstName + ' ') + employeeLastName
+
+		int count = WebUI.callTestCase(findTestCase('PIM/FindEmployee'), [('employeeName') : employeeName, ('matchExact') : true])
+
+		assert count == 0
+
+- Call the existing test case Common/GoToUrl to go to
+	URL http://opensource.demo.orangehrmlive.com/index.php/pim/addEmployee:
+
+    WebUI.callTestCase(findTestCase('Common/GoToUrl'), [('url') : 'http://opensource.demo.orangehrmlive.com/index.php/pim/addEmployee'])
+
+- Next enter the information for the first name and last name and save it:
+
+    WebUI.setText(findTestObject('PIM/AddEmployee/input_firstName'), employeeFirstName)
+
+		WebUI.setText(findTestObject('PIM/AddEmployee/input_lastName'), employeeLastName)
+
+		WebUI.click(findTestObject('PIM/AddEmployee/input_btnSave'))
+
+- Next verify that the employee just entered exists:
+
+    count = WebUI.callTestCase(findTestCase('PIM/FindEmployee'), [('employeeName') : employeeName, ('matchExact') : true])
+
+		assert count == 1
+
+- Next, create a spreadsheet in the Data Files directory with first name, last
+  name and complete name for your five employees.
+
+- Next, create a Test Suite PIM/CreateEmployees and use the data driven
+  approach to combine the spreadsheet and the test case.
+
 
 EXERCISE 2 - PIM -> Delete employees
 
@@ -24,6 +67,33 @@ In this exercise you should remove all employees who have been created in the
 previous exercise. Be cautious: do not remove other employees! Check the
 existence of your employee before and after the deletion.
 
+Detailed steps:
+
+- Create a test case PIM/DeleteEmployee with a (complete) name test case
+  variable (employeeName).
+
+- Call the existing test case PIM/FindEmployee to verify that the employee
+  does exist:
+
+    int count = WebUI.callTestCase(findTestCase('PIM/FindEmployee'), [('employeeName') : employeeName, ('matchExact') : true])
+
+		assert count == 1
+
+- Next, click the button delete and say OK when a dialog pops up:
+
+    WebUI.click(findTestObject('PIM/EmployeeList/input_btnDelete'))
+
+    WebUI.click(findTestObject('PIM/EmployeeList/input_dialogDeleteBtn'))
+
+- Next verify that the employee has been deleted:
+
+    count = WebUI.callTestCase(findTestCase('PIM/FindEmployee'), [('employeeName') : employeeName, ('matchExact') : true])
+
+    assert count == 0
+
+- Next, create a Test Suite PIM/DeleteEmployees and use the data driven
+  approach to combine the spreadsheet and the test case.
+	
 
 EXERCISE 3 - Best practices
 
