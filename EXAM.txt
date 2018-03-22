@@ -27,37 +27,20 @@ Detailed steps:
   test case variable (employeeFirstName and employeeLastName respectively).
 
 - Call the existing test case PIM/FindEmployee to verify that the employee
-  does not yet exist:
-
-	  String employeeName = (employeeFirstName + ' ') + employeeLastName
-
-		int count = WebUI.callTestCase(findTestCase('PIM/FindEmployee'), [('employeeName') : employeeName, ('matchExact') : true])
-
-		assert count == 0
+  does not yet exist.
 
 - Call the existing test case Common/GoToUrl to go to
-	URL http://opensource.demo.orangehrmlive.com/index.php/pim/addEmployee:
+	URL http://opensource.demo.orangehrmlive.com/index.php/pim/addEmployee.
 
-    WebUI.callTestCase(findTestCase('Common/GoToUrl'), [('url') : 'http://opensource.demo.orangehrmlive.com/index.php/pim/addEmployee'])
+- Enter the information for the first name and last name and save it.
 
-- Next enter the information for the first name and last name and save it:
+- Verify that the employee just entered exists by calling the existing
+  test case PIM/FindEmployee.
 
-    WebUI.setText(findTestObject('PIM/AddEmployee/input_firstName'), employeeFirstName)
-
-		WebUI.setText(findTestObject('PIM/AddEmployee/input_lastName'), employeeLastName)
-
-		WebUI.click(findTestObject('PIM/AddEmployee/input_btnSave'))
-
-- Next verify that the employee just entered exists:
-
-    count = WebUI.callTestCase(findTestCase('PIM/FindEmployee'), [('employeeName') : employeeName, ('matchExact') : true])
-
-		assert count == 1
-
-- Next, create a spreadsheet in the Data Files directory with first name, last
+- Create a spreadsheet in the Data Files directory with first name, last
   name and complete name for your five employees.
 
-- Next, create a Test Suite PIM/CreateEmployees and use the data driven
+- Create a Test Suite PIM/CreateEmployees and use the data driven
   approach to combine the spreadsheet and the test case.
 
 
@@ -73,25 +56,14 @@ Detailed steps:
   variable (employeeName).
 
 - Call the existing test case PIM/FindEmployee to verify that the employee
-  does exist:
+  does exist.
 
-    int count = WebUI.callTestCase(findTestCase('PIM/FindEmployee'), [('employeeName') : employeeName, ('matchExact') : true])
+- Click the button delete and say OK when a dialog pops up.
 
-		assert count == 1
+- Verify that the employee has been deleted by calling the existing test case
+  PIM/FindEmployee.
 
-- Next, click the button delete and say OK when a dialog pops up:
-
-    WebUI.click(findTestObject('PIM/EmployeeList/input_btnDelete'))
-
-    WebUI.click(findTestObject('PIM/EmployeeList/input_dialogDeleteBtn'))
-
-- Next verify that the employee has been deleted:
-
-    count = WebUI.callTestCase(findTestCase('PIM/FindEmployee'), [('employeeName') : employeeName, ('matchExact') : true])
-
-    assert count == 0
-
-- Next, create a Test Suite PIM/DeleteEmployees and use the data driven
+- Create a Test Suite PIM/DeleteEmployees and use the data driven
   approach to combine the spreadsheet and the test case.
 	
 
