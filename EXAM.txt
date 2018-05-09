@@ -27,7 +27,13 @@ Detailed steps:
   test case variable (employeeFirstName and employeeLastName respectively).
 
 - Call the existing test case PIM/FindEmployee to verify that the employee
-  does not yet exist.
+  does not yet exist. Use this piece of code:
+
+  String employeeName = (employeeFirstName + ' ') + employeeLastName
+
+  int count = WebUI.callTestCase(findTestCase('PIM/FindEmployee'), [('employeeName') : employeeName, ('matchExact') : true])
+
+  assert count == 0
 
 - Call the existing test case Common/GoToUrl to go to
 	URL http://opensource.demo.orangehrmlive.com/index.php/pim/addEmployee.
