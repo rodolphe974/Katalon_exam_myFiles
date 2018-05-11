@@ -4,6 +4,7 @@
    <name>katalon-exam</name>
    <tag></tag>
    <UUID>fbabf945-33b8-4bdd-83ee-afdbcc0d539d</UUID>
+   <migratedVersion>5.4.0</migratedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
    <recentExpandedTreeEntityIds>Test Cases</recentExpandedTreeEntityIds>
    <recentExpandedTreeEntityIds>Test Cases/PIM</recentExpandedTreeEntityIds>
