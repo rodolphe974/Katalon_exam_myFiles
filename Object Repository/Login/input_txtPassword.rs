@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description></description>
+   <description>Password field</description>
    <name>input_txtPassword</name>
    <tag></tag>
    <elementGuidId>746f0a81-0828-42ab-9daf-40608e819de6</elementGuidId>
