@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>Submit button</description>
+   <description>Submit button.</description>
    <name>input_Submit</name>
    <tag></tag>
    <elementGuidId>d307e397-ed57-42b6-997d-f140c2bc91fa</elementGuidId>

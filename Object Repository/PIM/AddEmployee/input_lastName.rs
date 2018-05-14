@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description></description>
+   <description>Last name field.</description>
    <name>input_lastName</name>
    <tag></tag>
    <elementGuidId>94c226b5-a0ea-4e37-9015-d023610bdf59</elementGuidId>

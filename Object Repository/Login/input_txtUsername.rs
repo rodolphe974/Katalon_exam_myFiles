@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>Username field</description>
+   <description>Username field.</description>
    <name>input_txtUsername</name>
    <tag></tag>
    <elementGuidId>44e98cd7-0c2f-4075-9d9e-1b738bc025bd</elementGuidId>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description></description>
+   <description>Save button.</description>
    <name>input_btnSave</name>
    <tag></tag>
    <elementGuidId>fa838b36-362a-4fa0-acf7-16031f13f218</elementGuidId>
