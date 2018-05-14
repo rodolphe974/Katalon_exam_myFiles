@@ -29,7 +29,7 @@ Detailed steps:
 - Call the existing test case PIM/FindEmployee to verify that the employee
   does not yet exist. Use this piece of code:
 
-    String employeeName = (employeeFirstName + ' ') + employeeLastName
+    String employeeName = employeeFirstName + ' ' + employeeLastName
 
     int count = WebUI.callTestCase(findTestCase('PIM/FindEmployee'), [('employeeName') : employeeName, ('matchExact') : true])
 
