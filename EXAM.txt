@@ -6,8 +6,9 @@ GENERAL
 The System Under Test (SUT) is http://opensource.demo.orangehrmlive.com. This
 is a test site and you can do there whatever you want. All exercises must be
 executed within Katalon Studio and of course you should create test cases,
-test suites and so on. The Katalon Studio project should be stored as a
-project in your personal GitHub account, so it can be verified later on.
+test suites and so on. 
+
+Use the URL https://github.com/gpaulissen/katalon-exam to clone a Git project.
 
 In the exam there is no need to use the Spy Web. The Record Web is not
 necessary too. All Web objects who need to be used are already in the Object
@@ -26,7 +27,7 @@ Detailed steps:
 - Create a test case PIM/CreateEmployee with a first name and last name
   test case variable (employeeFirstName and employeeLastName respectively).
 
-- Call the existing test case PIM/FindEmployee to verify that the employee
+- In the newly created test case, call the existing test case PIM/FindEmployee to verify that the employee
   does not yet exist. Use this piece of code:
 
     String employeeName = employeeFirstName + ' ' + employeeLastName
@@ -35,10 +36,12 @@ Detailed steps:
 
     assert count == 0
 
-- Call the existing test case Common/GoToUrl to go to
-	URL http://opensource.demo.orangehrmlive.com/index.php/pim/addEmployee.
+- In the newly created test case, call the existing test case Common/GoToUrl to go to
+  URL http://opensource.demo.orangehrmlive.com/index.php/pim/addEmployee. Use this piece of code:
 
-- Enter the information for the first name and last name and save it.
+    WebUI.callTestCase(findTestCase('Common/GoToUrl'), ['url' : 'http://opensource.demo.orangehrmlive.com/index.php/pim/addEmployee'])
+
+- In the newly created test case, add code to enter the information for the first name and last name and save it.
 
 - Verify that the employee just entered exists by calling the existing
   test case PIM/FindEmployee.
@@ -90,9 +93,5 @@ EXERCISE 4 - Cleanup / efficiency
 Ensure that in all test cases the browser is only opened when necessary and
 never closed by you. Remove all unnecessary objects.
 
-
-EXERCISE 5 - Git
-
-Do not forget to store everything in Git. Do not store the reports.
 
 *** THE END ***
