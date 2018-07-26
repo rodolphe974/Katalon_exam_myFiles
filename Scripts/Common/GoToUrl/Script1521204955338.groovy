@@ -22,11 +22,13 @@ catch (StepFailedException e) {
 
     WebUI.maximizeWindow()
 
-    WebUI.setText(findTestObject('Login/input_txtUsername'), GlobalVariable.loginUsername)
-
-    WebUI.setText(findTestObject('Login/input_txtPassword'), GlobalVariable.loginPassword)
-
-    WebUI.click(findTestObject('Login/input_Submit'))
+	WebUI.click(findTestObject('Home/a_Sign in'))
+	
+	WebUI.setText(findTestObject('Login/input_email'), GlobalVariable.loginUsername)
+	
+	WebUI.setEncryptedText(findTestObject('Login/input_passwd'), GlobalVariable.loginPassword)
+	
+	WebUI.click(findTestObject('Login/span_Sign in'))	
 } 
 
 WebUI.navigateToUrl(url)

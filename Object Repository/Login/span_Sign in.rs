@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>Username field.</description>
-   <name>input_txtUsername</name>
+   <description></description>
+   <name>span_Sign in</name>
    <tag></tag>
-   <elementGuidId>44e98cd7-0c2f-4075-9d9e-1b738bc025bd</elementGuidId>
+   <elementGuidId>580fa2d9-f00b-4c45-8833-476ebf234621</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,34 +11,23 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>input</value>
+      <value>span</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>name</name>
+      <name>text</name>
       <type>Main</type>
-      <value>txtUsername</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>id</name>
-      <type>Main</type>
-      <value>txtUsername</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>type</name>
-      <type>Main</type>
-      <value>text</value>
+      <value>
+								
+								Sign in
+							</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;txtUsername&quot;)</value>
+      <value>id(&quot;SubmitLogin&quot;)/span[1]</value>
    </webElementProperties>
 </WebElementEntity>

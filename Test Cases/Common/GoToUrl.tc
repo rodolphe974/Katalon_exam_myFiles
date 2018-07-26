@@ -6,7 +6,7 @@
    <comment></comment>
    <testCaseGuid>a2f724aa-8690-4a7d-b969-4541f19b91a7</testCaseGuid>
    <variable>
-      <defaultValue>'http://opensource.demo.orangehrmlive.com'</defaultValue>
+      <defaultValue>''</defaultValue>
       <description></description>
       <id>ce2ac011-6714-4fd4-8135-1d570bc841a9</id>
       <masked>false</masked>

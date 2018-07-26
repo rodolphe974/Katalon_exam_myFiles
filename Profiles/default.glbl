@@ -6,7 +6,7 @@
    <defaultProfile>true</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'http://opensource.demo.orangehrmlive.com'</initValue>
+      <initValue>'http://automationpractice.com/index.php'</initValue>
       <name>loginUrl</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -16,23 +16,13 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'Admin'</initValue>
+      <initValue>'gert-jan.paulissen@sogeti.com'</initValue>
       <name>loginUsername</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'admin'</initValue>
+      <initValue>'rFuWrTpEJn0='</initValue>
       <name>loginPassword</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'http://opensource.demo.orangehrmlive.com/index.php/pim/addEmployee'</initValue>
-      <name>addEmployeeUrl</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'http://opensource.demo.orangehrmlive.com/index.php/pim/viewEmployeeList/reset/1'</initValue>
-      <name>viewEmployeeListUrl</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>

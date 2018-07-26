@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_empsearchemployee_nameem</name>
+   <name>input_passwd</name>
    <tag></tag>
-   <elementGuidId>6d2b3792-8732-4c51-9ce8-7c21a4fecfb4</elementGuidId>
+   <elementGuidId>7c26e91a-bdb2-411c-aefc-b538022c5dea</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -14,45 +14,45 @@
       <value>input</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>type</name>
+      <name>class</name>
       <type>Main</type>
-      <value>text</value>
+      <value>is_required validate account_input form-control</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>name</name>
+      <name>type</name>
       <type>Main</type>
-      <value>empsearch[employee_name][empName]</value>
+      <value>password</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-validate</name>
+      <type>Main</type>
+      <value>isPasswd</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>empsearch_employee_name_empName</value>
+      <value>passwd</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>class</name>
+      <name>name</name>
       <type>Main</type>
-      <value>ac_input</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>autocomplete</name>
-      <type>Main</type>
-      <value>off</value>
+      <value>passwd</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;empsearch_employee_name_empName&quot;)</value>
+      <value>id(&quot;passwd&quot;)</value>
    </webElementProperties>
 </WebElementEntity>
