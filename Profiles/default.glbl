@@ -16,12 +16,12 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'gert-jan.paulissen@sogeti.com'</initValue>
+      <initValue>''</initValue>
       <name>loginUsername</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'rFuWrTpEJn0='</initValue>
+      <initValue>''</initValue>
       <name>loginPassword</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

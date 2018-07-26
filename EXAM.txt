@@ -3,80 +3,38 @@ EXAM OPTIMIZE YOUR AUTOMATION SKILLS
 
 GENERAL
 
-The System Under Test (SUT) is http://opensource.demo.orangehrmlive.com. This
-is a test site and you can do there whatever you want. All exercises must be
-executed within Katalon Studio and of course you should create test cases,
-test suites and so on. 
+The System Under Test (SUT) is http://automationpractice.com/index.php.  This
+is really a nice fake e-commerce site to practice test automation.  If you
+have a project where you need to practice different flows for online stores,
+this is the website you want. All exercises must be executed within Katalon
+Studio and of course you should create test cases, test suites and so on.
 
 Use the URL https://github.com/gpaulissen/katalon-exam to clone a Git project.
 
-In the exam there is no need to use the Spy Web. The Record Web is not
-necessary too. All Web objects who need to be used are already in the Object
-Repository.
 
-
-EXERCISE 1 - PIM -> Create employees
-
-Login with Admin and create 5 employees: first name "pizza" and last name
-"employee_X_Y_Z" where X is the number of the pizza session, Y your user
-number and Z between 1 and 5. Check the existence of your employee before and
-after the creation.
+EXERCISE 1 - Create an address
 
 Detailed steps:
 
-- Create a test case PIM/CreateEmployee with a first name and last name
-  test case variable (employeeFirstName and employeeLastName respectively).
+- Change the global variables loginUsername and loginPassword to your email
+  and encrypted password. Use Record Web to retrieve the encrypted password.
 
-- In the newly created test case, call the existing test case PIM/FindEmployee to verify that the employee
-  does not yet exist. Use this piece of code:
+- Go to the url http://automationpractice.com/index.php?controller=addresses.
+  Use the existing test case Common/GoToUrl to go to the Url and login as necessary:
 
-    String employeeName = employeeFirstName + ' ' + employeeLastName
+    WebUI.callTestCase(findTestCase('Common/GoToUrl'), ['url' : GlobalVariables.loginUrl + '?controller=addresses'])
 
-    int count = WebUI.callTestCase(findTestCase('PIM/FindEmployee'), [('employeeName') : employeeName, ('matchExact') : true])
+- Click the button Add a new address and fill in the details.
+  Use variables.
 
-    assert count == 0
+- Create an internal spreadsheet in the Data Files directory with all the
+  information you entered. Repeat this five times.
 
-- In the newly created test case, call the existing test case Common/GoToUrl to go to
-  URL http://opensource.demo.orangehrmlive.com/index.php/pim/addEmployee. Use this piece of code:
-
-    WebUI.callTestCase(findTestCase('Common/GoToUrl'), ['url' : 'http://opensource.demo.orangehrmlive.com/index.php/pim/addEmployee'])
-
-- In the newly created test case, add code to enter the information for the first name and last name and save it.
-
-- Verify that the employee just entered exists by calling the existing
-  test case PIM/FindEmployee.
-
-- Create a spreadsheet in the Data Files directory with first name, last
-  name and complete name for your five employees.
-
-- Create a Test Suite PIM/CreateEmployees and use the data driven
+- Create a Test Suite and use the data driven
   approach to combine the spreadsheet and the test case.
 
 
-EXERCISE 2 - PIM -> Delete employees
-
-In this exercise you should remove all employees who have been created in the
-previous exercise. Be cautious: do not remove other employees! Check the
-existence of your employee before and after the deletion.
-
-Detailed steps:
-
-- Create a test case PIM/DeleteEmployee with a (complete) name test case
-  variable (employeeName).
-
-- Call the existing test case PIM/FindEmployee to verify that the employee
-  does exist.
-
-- Click the button delete and say OK when a dialog pops up.
-
-- Verify that the employee has been deleted by calling the existing test case
-  PIM/FindEmployee.
-
-- Create a Test Suite PIM/DeleteEmployees and use the data driven
-  approach to combine the spreadsheet and the test case.
-	
-
-EXERCISE 3 - Best practices
+EXERCISE 2 - Best practices
 
 The answers to the questions below can be found in the Word document "Improve
 your automation skills" in Microsoft Teams.
@@ -88,7 +46,7 @@ Best practice  Example
 
 
 
-EXERCISE 4 - Cleanup / efficiency
+EXERCISE 3 - Cleanup / efficiency
 
 Ensure that in all test cases the browser is only opened when necessary and
 never closed by you. Remove all unnecessary objects.
