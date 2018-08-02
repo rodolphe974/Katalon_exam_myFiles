@@ -16,13 +16,18 @@ EXERCISE 1 - Create an address
 
 Detailed steps:
 
+- Go to the site http://automationpractice.com/index.php and Sign Up the first time.
+  Please note your username (email) and password.
+
+- Use the Record Web to just Sign In. Stop the recorder.
+
 - Change the global variables loginUsername and loginPassword to your email
-  and encrypted password. Use Record Web to retrieve the encrypted password.
+  and encrypted password. See the script created by Record Web to retrieve the encrypted password.
 
 - Go to the url http://automationpractice.com/index.php?controller=addresses.
   Use the existing test case Common/GoToUrl to go to the Url and login as necessary:
 
-    WebUI.callTestCase(findTestCase('Common/GoToUrl'), ['url' : GlobalVariables.loginUrl + '?controller=addresses'])
+    WebUI.callTestCase(findTestCase('Common/GoToUrl'), ['url' : GlobalVariable.loginUrl + '?controller=addresses'])
 
 - Click the button Add a new address and fill in the details.
   Use variables.

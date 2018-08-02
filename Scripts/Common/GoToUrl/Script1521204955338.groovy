@@ -13,25 +13,40 @@ import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 
+currentUrl = ''
+
 try {
-    WebUI.getUrl()
+    currentUrl = WebUI.getUrl()
 }
 catch (StepFailedException e) {
     // browser not open	
-    WebUI.openBrowser(GlobalVariable.loginUrl)
+    WebUI.openBrowser(url)
 
     WebUI.maximizeWindow()
-
-	WebUI.click(findTestObject('Home/a_Sign in'))
 	
-	WebUI.setText(findTestObject('Login/input_email'), GlobalVariable.loginUsername)
-	
-	WebUI.setEncryptedText(findTestObject('Login/input_passwd'), GlobalVariable.loginPassword)
-	
-	WebUI.click(findTestObject('Login/span_Sign in'))	
+	currentUrl = WebUI.getUrl()
 } 
 
-WebUI.navigateToUrl(url)
+if (!(currentUrl.equals(url))) {
+    WebUI.navigateToUrl(url)
 
-WebUI.waitForPageLoad(GlobalVariable.timeOut)
+    WebUI.waitForPageLoad(GlobalVariable.timeOut)
+}
+
+/* Do we need to sign in? Check so by looking for text Sign in */
+Boolean found = WebUI.verifyTextPresent('Sign in', false)
+
+if (found) {
+    WebUI.click(findTestObject('Login/a_Sign in'))
+
+    WebUI.setText(findTestObject('Login/input_email'), GlobalVariable.loginUsername)
+
+    WebUI.setText(findTestObject('Login/input_passwd'), GlobalVariable.loginPassword)
+
+    WebUI.click(findTestObject('Login/span_Sign in'))    
+	
+	WebUI.navigateToUrl(url)
+	
+	WebUI.waitForPageLoad(GlobalVariable.timeOut)
+}
 

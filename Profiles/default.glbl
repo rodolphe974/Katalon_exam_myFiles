@@ -6,11 +6,6 @@
    <defaultProfile>true</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'http://automationpractice.com/index.php'</initValue>
-      <name>loginUrl</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
       <initValue>5</initValue>
       <name>timeOut</name>
    </GlobalVariableEntity>
@@ -26,7 +21,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>false</initValue>
-      <name>debug</name>
+      <initValue>'http://automationpractice.com/index.php'</initValue>
+      <name>homeUrl</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
