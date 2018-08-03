@@ -23,8 +23,8 @@ catch (StepFailedException e) {
     WebUI.openBrowser(url)
 
     WebUI.maximizeWindow()
-	
-	currentUrl = WebUI.getUrl()
+
+    currentUrl = WebUI.getUrl()
 } 
 
 if (!(currentUrl.equals(url))) {
@@ -34,7 +34,7 @@ if (!(currentUrl.equals(url))) {
 }
 
 /* Do we need to sign in? Check so by looking for text Sign in */
-Boolean found = WebUI.verifyTextPresent('Sign in', false)
+Boolean found = WebUI.verifyTextPresent('Sign in', false, FailureHandling.CONTINUE_ON_FAILURE)
 
 if (found) {
     WebUI.click(findTestObject('Login/a_Sign in'))
@@ -43,10 +43,13 @@ if (found) {
 
     WebUI.setText(findTestObject('Login/input_passwd'), GlobalVariable.loginPassword)
 
-    WebUI.click(findTestObject('Login/span_Sign in'))    
-	
-	WebUI.navigateToUrl(url)
-	
-	WebUI.waitForPageLoad(GlobalVariable.timeOut)
+    WebUI.click(findTestObject('Login/span_Sign in'))
+
+    WebUI.navigateToUrl(url)
+
+    WebUI.waitForPageLoad(GlobalVariable.timeOut)
 }
+
+/* We should be signed in now, so verify that the text Sign out is on the page */
+WebUI.verifyTextPresent('Sign out', false)
 

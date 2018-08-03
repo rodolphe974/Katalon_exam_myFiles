@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>Go to an URL.</description>
+   <description>Go to an URL. This test case is actually just a function that will open the browser only once, when needed. It also checks whether you have signed in and if not, it will sign in. Finally it wil go to the url supplied as a parameter.</description>
    <name>GoToUrl</name>
    <tag></tag>
    <comment></comment>
