@@ -33,10 +33,10 @@ if (!(currentUrl.equals(url))) {
     WebUI.waitForPageLoad(GlobalVariable.timeOut)
 }
 
-/* Do we need to sign in? Check so by looking for text Sign in */
-Boolean found = WebUI.verifyTextPresent('Sign in', false, FailureHandling.CONTINUE_ON_FAILURE)
+try {
+	/* Do we need to sign in? Check so by looking for text Sign in */
+	WebUI.verifyTextPresent('Sign in', false)
 
-if (found) {
     WebUI.click(findTestObject('Login/a_Sign in'))
 
     WebUI.setText(findTestObject('Login/input_email'), GlobalVariable.loginUsername)
@@ -48,8 +48,9 @@ if (found) {
     WebUI.navigateToUrl(url)
 
     WebUI.waitForPageLoad(GlobalVariable.timeOut)
-}
-
+} catch ( e ) {
+    /* Sign in does not need to be present */
+} 
 /* We should be signed in now, so verify that the text Sign out is on the page */
 WebUI.verifyTextPresent('Sign out', false)
 

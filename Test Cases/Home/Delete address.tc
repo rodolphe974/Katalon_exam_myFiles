@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Add an address. It uses the common function GoToUrl to go to the page you want in an efficient way.</description>
+   <name>Delete address</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>52db0887-3ac0-4c35-8542-bfea510f2e54</testCaseGuid>
+   <variable>
+      <defaultValue>'Work'</defaultValue>
+      <description></description>
+      <id>f0f982c0-be37-4c04-89eb-681a4d5ed154</id>
+      <masked>false</masked>
+      <name>alias</name>
+   </variable>
+</TestCaseEntity>
