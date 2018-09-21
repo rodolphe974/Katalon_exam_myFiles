@@ -4,7 +4,7 @@
    <name>katalon-exam</name>
    <tag></tag>
    <UUID>fbabf945-33b8-4bdd-83ee-afdbcc0d539d</UUID>
-   <migratedVersion>5.4.0</migratedVersion>
+   <migratedVersion>5.7.0</migratedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
    <recentExpandedTreeEntityIds>Test Cases</recentExpandedTreeEntityIds>
    <recentExpandedTreeEntityIds>Test Cases/PIM</recentExpandedTreeEntityIds>
@@ -23,5 +23,19 @@
    <recentOpenedTreeEntityIds>Test Cases/PIM/Delete Employee</recentOpenedTreeEntityIds>
    <recentOpenedTreeEntityIds>Test Cases/PIM/Create Employee</recentOpenedTreeEntityIds>
    <recentOpenedTreeEntityIds>Test Cases/PIM/Find Employee</recentOpenedTreeEntityIds>
+   <sourceContent>
+      <sourceFolderList>
+         <sourceFolderConfiguration>
+            <url>Include/scripts/groovy</url>
+         </sourceFolderConfiguration>
+      </sourceFolderList>
+      <systemFolderList>
+         <systemFolderConfiguration>
+            <url>Include/scripts/groovy</url>
+         </systemFolderConfiguration>
+         <systemFolderConfiguration>
+            <url>Include/features</url>
+         </systemFolderConfiguration>
+      </systemFolderList>
+   </sourceContent>
 </Project>
-

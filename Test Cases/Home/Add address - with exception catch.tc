@@ -1,49 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>Add an address. It uses the common function GoToUrl to go to the page you want in an efficient way.</description>
-   <name>Add address</name>
+   <description>Add an address. It uses the common function GoToUrl to go to the page you want in an efficient way.
+Use excetion catch in case address already exist (this is a bonus to the proposed exercice)</description>
+   <name>Add address - with exception catch</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>46ae6bc8-5906-4545-aa71-8cf9d2aac1bd</testCaseGuid>
+   <testCaseGuid>81eb7172-a170-4538-b123-383bae45cefe</testCaseGuid>
    <variable>
       <defaultValue>'ch 7, the Prancing Pony'</defaultValue>
       <description></description>
-      <id>497a4e4e-8889-4601-8e7c-8d48c8a2423d</id>
+      <id>e56248ae-b87e-437c-8622-a486888d1d50</id>
       <masked>false</masked>
       <name>myAddress</name>
    </variable>
    <variable>
       <defaultValue>'Bree'</defaultValue>
       <description></description>
-      <id>e7f0e5ca-a81f-4c18-a99a-44c0b24136f6</id>
+      <id>f80c8425-3f23-4f17-9c39-3db519998a93</id>
       <masked>false</masked>
       <name>myCity</name>
    </variable>
    <variable>
       <defaultValue>'1'</defaultValue>
       <description></description>
-      <id>a2dfcc55-510f-46f0-9f61-d9148fc0f72d</id>
+      <id>934b95aa-061d-4b1f-83b1-e2a41f4b5227</id>
       <masked>false</masked>
       <name>myState</name>
    </variable>
    <variable>
       <defaultValue>'42421'</defaultValue>
       <description></description>
-      <id>eff4fc04-e3ed-460b-8c9a-081df55d8532</id>
+      <id>98f0f74f-432a-4cfa-9001-65813d0e8b54</id>
       <masked>false</masked>
       <name>myZip</name>
    </variable>
    <variable>
       <defaultValue>'968742556687277'</defaultValue>
       <description></description>
-      <id>e1ea2592-b65a-47b1-a789-5eef6313efc4</id>
+      <id>4c320832-f1d6-4e9a-86f3-27ea51833900</id>
       <masked>false</masked>
       <name>myMobile</name>
    </variable>
    <variable>
       <defaultValue>'Bed and Breakfast'</defaultValue>
       <description></description>
-      <id>9b266fc6-475a-4ec7-ac2b-cbdd6e03f46b</id>
+      <id>323e4b42-b109-4edf-a86c-ce1abcb9d6b2</id>
       <masked>false</masked>
       <name>myAlias</name>
    </variable>

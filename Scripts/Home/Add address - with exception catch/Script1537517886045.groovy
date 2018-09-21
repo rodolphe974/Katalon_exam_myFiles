@@ -18,14 +18,31 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 
-WebUI.callTestCase(findTestCase('Common/GoToUrl'), [('url') : GlobalVariable.homeUrl + '?controller=addresses'])
+WebUI.callTestCase(findTestCase('Common/GoToUrl'), [('url') : GlobalVariable.homeUrl + '?controller=addresses'], FailureHandling.OPTIONAL)
 
-deleteButton = WebUI.modifyObjectProperty(findTestObject('Object Repository/Page_Addresses - My Store/span_Delete'), 'xpath', 
-    'equals', ('//a[@title=\'Delete\' and ../../li[1]/h3/text()=\'' + myAlias) + '\']', true)
+WebUI.click(findTestObject('Page_Addresses - My Store/span_Add a new address'))
 
-if (WebUI.waitForElementPresent(deleteButton, 2)) {
-    return deleteButton
-} else {
+WebUI.setText(findTestObject('Page_Address - My Store/input__address1'), myAddress)
+
+WebUI.setText(findTestObject('Page_Address - My Store/input__city'), myCity)
+
+WebUI.selectOptionByValue(findTestObject('Page_Address - My Store/select_state'), 
+    myState, true)
+
+WebUI.setText(findTestObject('Page_Address - My Store/input__postcode'), myZip)
+
+WebUI.setText(findTestObject('Page_Address - My Store/input__phone_mobile'), myMobile)
+
+WebUI.setText(findTestObject('Page_Address - My Store/input__alias'), myAlias)
+
+try {
+    WebUI.click(findTestObject('Page_Address - My Store/span_Save'))
 }
+catch (Exception e) {
+    not_run: WebUI.acceptAlert()
+
+    WebUI.waitForElementVisible(findTestObject('Page_Address - My Store/div_alias_error'), 0)
+} 
 

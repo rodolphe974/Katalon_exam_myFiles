@@ -6,10 +6,10 @@
    <comment></comment>
    <testCaseGuid>95a3a5ae-89ef-4b41-8f34-fa3867c7b23b</testCaseGuid>
    <variable>
-      <defaultValue>'abc'</defaultValue>
+      <defaultValue>'Home'</defaultValue>
       <description></description>
       <id>512e8d9a-a5b2-4c29-90c8-86b20afe7742</id>
       <masked>false</masked>
-      <name>alias</name>
+      <name>myAlias</name>
    </variable>
 </TestCaseEntity>

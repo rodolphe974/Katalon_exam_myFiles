@@ -11,12 +11,12 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>''</initValue>
+      <initValue>'bilbo.baggins@middleearth.com'</initValue>
       <name>loginUsername</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>''</initValue>
+      <initValue>'youshallnotpass'</initValue>
       <name>loginPassword</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

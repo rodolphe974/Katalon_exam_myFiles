@@ -18,12 +18,15 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 
-deleteButton = WebUI.callTestCase(findTestCase('Common/FindAddress'), [('alias') : alias])
+deleteButton = WebUI.callTestCase(findTestCase('Common/FindAddress'), [('myAlias') : myAlias], FailureHandling.STOP_ON_FAILURE)
 
 if (deleteButton) {
     WebUI.click(deleteButton)
 
     WebUI.acceptAlert()
 }
+
+WebUI.closeBrowser()
 
