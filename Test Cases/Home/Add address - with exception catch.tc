@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description>Add an address. It uses the common function GoToUrl to go to the page you want in an efficient way.
-Use excetion catch in case address already exist (this is a bonus to the proposed exercice)</description>
+Use excetion catch in case address already exist (this is a bonus to the proposed exercice - just to try a different approach)</description>
    <name>Add address - with exception catch</name>
    <tag></tag>
    <comment></comment>

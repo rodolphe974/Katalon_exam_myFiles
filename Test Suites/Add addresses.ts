@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
-   <description></description>
+   <description>Test the addresse adding function using data driven approach with spreadsheet Addresses</description>
    <name>Add addresses</name>
    <tag></tag>
    <isRerun>false</isRerun>
