@@ -29,8 +29,6 @@ deleteButton = WebUI.modifyObjectProperty(findTestObject('Object Repository/Page
     'equals', ('//a[@title=\'Delete\' and ../../li[1]/h3/text()=\'' + myAlias) + '\']', true)
 
 if (WebUI.waitForElementPresent(deleteButton, 2)) {
-    not_run: return deleteButton
-    
     alias_exists = true
 } else {
 }

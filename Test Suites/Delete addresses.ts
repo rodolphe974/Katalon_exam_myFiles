@@ -4,7 +4,7 @@
    <name>Delete addresses</name>
    <tag></tag>
    <isRerun>false</isRerun>
-   <lastRun>2018-09-21T11:26:11</lastRun>
+   <lastRun>2018-09-21T11:53:32</lastRun>
    <mailRecipient></mailRecipient>
    <numberOfRerun>0</numberOfRerun>
    <pageLoadTimeout>5</pageLoadTimeout>

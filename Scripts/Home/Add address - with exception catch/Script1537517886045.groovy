@@ -28,8 +28,7 @@ WebUI.setText(findTestObject('Page_Address - My Store/input__address1'), myAddre
 
 WebUI.setText(findTestObject('Page_Address - My Store/input__city'), myCity)
 
-WebUI.selectOptionByValue(findTestObject('Page_Address - My Store/select_state'), 
-    myState, true)
+WebUI.selectOptionByValue(findTestObject('Page_Address - My Store/select_state'), myState, true)
 
 WebUI.setText(findTestObject('Page_Address - My Store/input__postcode'), myZip)
 
@@ -41,8 +40,6 @@ try {
     WebUI.click(findTestObject('Page_Address - My Store/span_Save'))
 }
 catch (Exception e) {
-    not_run: WebUI.acceptAlert()
-
     WebUI.waitForElementVisible(findTestObject('Page_Address - My Store/div_alias_error'), 0)
 } 
 
