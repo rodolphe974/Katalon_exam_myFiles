@@ -25,6 +25,8 @@ deleteButton = WebUI.callTestCase(findTestCase('Common/FindAddress'), [('myAlias
 if (deleteButton) {
     WebUI.click(deleteButton)
 
+    WebUI.waitForAlert(1)
+
     WebUI.acceptAlert()
 }
 
