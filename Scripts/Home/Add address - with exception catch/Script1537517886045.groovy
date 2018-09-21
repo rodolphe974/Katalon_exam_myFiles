@@ -43,3 +43,5 @@ catch (Exception e) {
     WebUI.waitForElementVisible(findTestObject('Page_Address - My Store/div_alias_error'), 0)
 } 
 
+WebUI.closeBrowser()
+
