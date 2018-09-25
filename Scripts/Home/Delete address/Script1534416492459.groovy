@@ -28,6 +28,8 @@ if (deleteButton) {
     WebUI.waitForAlert(1)
 
     WebUI.acceptAlert()
+
+    WebUI.waitForPageLoad(1)
 }
 
 WebUI.closeBrowser()
