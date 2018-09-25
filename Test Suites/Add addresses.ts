@@ -4,7 +4,7 @@
    <name>Add addresses</name>
    <tag></tag>
    <isRerun>false</isRerun>
-   <lastRun>2018-09-25T12:29:06</lastRun>
+   <lastRun>2018-09-25T12:50:45</lastRun>
    <mailRecipient></mailRecipient>
    <numberOfRerun>0</numberOfRerun>
    <pageLoadTimeout>5</pageLoadTimeout>
