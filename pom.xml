@@ -23,10 +23,10 @@
           <arguments>
             <argument>-runMode=console</argument>
             <argument>-projectPath=${katalon.project.file}</argument>
-            <argument>-browserType=Chrome</argument>
+            <argument>-browserType=${katalon.browser}</argument>
             <argument>-executionProfile=default</argument>
             <argument>-retry=0</argument>
-            <argument>-testSuitePath=Test Suites/Add addresses</argument>
+            <argument>-testSuitePath=${katalon.testsuite}</argument>
           </arguments>
         </configuration>
       </plugin>
