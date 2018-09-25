@@ -1,0 +1,60 @@
+1
+00:00:00,298 --> 00:00:00,304
+1. Statement - alias_exists = false
+
+2
+00:00:00,315 --> 00:00:00,317
+5. callTestCase
+
+3
+00:00:00,553 --> 00:00:00,554
+1. Statement - currentUrl = ""
+
+4
+00:00:00,560 --> 00:00:00,561
+5. Statement - Try
+
+5
+00:00:00,566 --> 00:00:00,567
+1. Statement - currentUrl = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getUrl()
+
+6
+00:00:00,712 --> 00:00:00,713
+2. openBrowser
+
+7
+00:00:03,717 --> 00:00:03,718
+6. maximizeWindow
+
+8
+00:00:04,848 --> 00:00:04,850
+10. Statement - currentUrl = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getUrl()
+
+9
+00:00:04,865 --> 00:00:04,866
+9. Statement - If (!(currentUrl.equals(url)))
+
+10
+00:00:04,872 --> 00:00:04,873
+13. Statement - Try
+
+11
+00:00:04,878 --> 00:00:04,879
+1. verifyTextPresent
+
+12
+00:00:05,163 --> 00:00:05,165
+17. verifyTextPresent
+
+13
+00:00:05,431 --> 00:00:05,433
+11. Chekc if a frame with the same alias exist on the "Adresses page". If so, a delete button normaly also exists. And in this case, we will expect an error message after clicking the add address button
+
+14
+00:00:05,464 --> 00:00:05,466
+15. Statement - If (com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.waitForElementPresent(deleteButton, 2))
+
+15
+00:00:07,556 --> 00:00:07,557
+19. click
+

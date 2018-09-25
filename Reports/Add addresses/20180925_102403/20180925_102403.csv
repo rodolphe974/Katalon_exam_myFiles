@@ -1,0 +1,36 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+Add addresses,Chrome 69.0.3497.100,Test the addresse adding function using data driven approach with spreadsheet Addresses,2018-09-25 10:24:09,2018-09-25 10:24:45,"35,770s",PASSED
+,,,,,,
+Test Cases/Home/Add address,Chrome 69.0.3497.100,"Add an address. It uses the common function GoToUrl to go to the page you want in an efficient way.
+Implemented as requested in the same fashion way than Delete address to check doublon",2018-09-25 10:24:09,2018-09-25 10:24:28,"18,874s",PASSED
+Statement - alias_exists = false,Chrome 69.0.3497.100,,2018-09-25 10:24:10,2018-09-25 10:24:10,"0,012s",PASSED
+callTestCase,Chrome 69.0.3497.100,,2018-09-25 10:24:10,2018-09-25 10:24:22,"12,100s",PASSED
+"Statement - deleteButton = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.modifyObjectProperty(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Object Repository/Page_Addresses - My Store/span_Delete), ""xpath"", ""equals"", ""//a[@title='Delete' and ../../li[1]/h3/text()='"" + myAlias + ""']"", true)",Chrome 69.0.3497.100,"Chekc if a frame with the same alias exist on the ""Adresses page"". If so, a delete button normaly also exists. And in this case, we will expect an error message after clicking the add address button",2018-09-25 10:24:22,2018-09-25 10:24:22,"0,016s",PASSED
+"Statement - If (com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.waitForElementPresent(deleteButton, 2))",Chrome 69.0.3497.100,,2018-09-25 10:24:22,2018-09-25 10:24:22,"0,036s",PASSED
+click,Chrome 69.0.3497.100,,2018-09-25 10:24:22,2018-09-25 10:24:23,"1,254s",PASSED
+setText,Chrome 69.0.3497.100,,2018-09-25 10:24:23,2018-09-25 10:24:23,"0,154s",PASSED
+setText,Chrome 69.0.3497.100,,2018-09-25 10:24:23,2018-09-25 10:24:23,"0,167s",PASSED
+selectOptionByValue,Chrome 69.0.3497.100,,2018-09-25 10:24:23,2018-09-25 10:24:24,"0,478s",PASSED
+setText,Chrome 69.0.3497.100,,2018-09-25 10:24:24,2018-09-25 10:24:24,"0,109s",PASSED
+setText,Chrome 69.0.3497.100,,2018-09-25 10:24:24,2018-09-25 10:24:24,"0,148s",PASSED
+setText,Chrome 69.0.3497.100,,2018-09-25 10:24:24,2018-09-25 10:24:24,"0,102s",PASSED
+click,Chrome 69.0.3497.100,,2018-09-25 10:24:24,2018-09-25 10:24:25,"1,181s",PASSED
+Statement - If (alias_exists),Chrome 69.0.3497.100,,2018-09-25 10:24:25,2018-09-25 10:24:25,"0,056s",PASSED
+closeBrowser,Chrome 69.0.3497.100,,2018-09-25 10:24:25,2018-09-25 10:24:26,"0,666s",PASSED
+,,,,,,
+Test Cases/Home/Add address,Chrome 69.0.3497.100,"Add an address. It uses the common function GoToUrl to go to the page you want in an efficient way.
+Implemented as requested in the same fashion way than Delete address to check doublon",2018-09-25 10:24:28,2018-09-25 10:24:45,"16,633s",PASSED
+Statement - alias_exists = false,Chrome 69.0.3497.100,,2018-09-25 10:24:28,2018-09-25 10:24:28,"0,002s",PASSED
+callTestCase,Chrome 69.0.3497.100,,2018-09-25 10:24:28,2018-09-25 10:24:39,"10,793s",PASSED
+"Statement - deleteButton = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.modifyObjectProperty(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Object Repository/Page_Addresses - My Store/span_Delete), ""xpath"", ""equals"", ""//a[@title='Delete' and ../../li[1]/h3/text()='"" + myAlias + ""']"", true)",Chrome 69.0.3497.100,"Chekc if a frame with the same alias exist on the ""Adresses page"". If so, a delete button normaly also exists. And in this case, we will expect an error message after clicking the add address button",2018-09-25 10:24:39,2018-09-25 10:24:39,"0,007s",PASSED
+"Statement - If (com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.waitForElementPresent(deleteButton, 2))",Chrome 69.0.3497.100,,2018-09-25 10:24:39,2018-09-25 10:24:39,"0,029s",PASSED
+click,Chrome 69.0.3497.100,,2018-09-25 10:24:39,2018-09-25 10:24:40,"0,941s",PASSED
+setText,Chrome 69.0.3497.100,,2018-09-25 10:24:40,2018-09-25 10:24:40,"0,140s",PASSED
+setText,Chrome 69.0.3497.100,,2018-09-25 10:24:40,2018-09-25 10:24:40,"0,111s",PASSED
+selectOptionByValue,Chrome 69.0.3497.100,,2018-09-25 10:24:40,2018-09-25 10:24:41,"0,513s",PASSED
+setText,Chrome 69.0.3497.100,,2018-09-25 10:24:41,2018-09-25 10:24:41,"0,114s",PASSED
+setText,Chrome 69.0.3497.100,,2018-09-25 10:24:41,2018-09-25 10:24:41,"0,157s",PASSED
+setText,Chrome 69.0.3497.100,,2018-09-25 10:24:41,2018-09-25 10:24:41,"0,097s",PASSED
+click,Chrome 69.0.3497.100,,2018-09-25 10:24:41,2018-09-25 10:24:42,"1,011s",PASSED
+Statement - If (alias_exists),Chrome 69.0.3497.100,,2018-09-25 10:24:42,2018-09-25 10:24:42,"0,046s",PASSED
+closeBrowser,Chrome 69.0.3497.100,,2018-09-25 10:24:42,2018-09-25 10:24:43,"0,643s",PASSED

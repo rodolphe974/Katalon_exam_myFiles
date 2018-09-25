@@ -1,0 +1,12 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+Delete addresses,Chrome 69.0.3497.100,Test the addresse deletion function using data driven approach with spreadsheet Addresses,2018-09-25 11:21:48,2018-09-25 11:22:17,"29,687s",PASSED
+,,,,,,
+Test Cases/Home/Delete address,Chrome 69.0.3497.100,Delete an addresses,2018-09-25 11:21:48,2018-09-25 11:22:04,"15,691s",PASSED
+"Statement - deleteButton = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.callTestCase(com.kms.katalon.core.testcase.TestCaseFactory.findTestCase(Common/FindAddress), [""myAlias"":myAlias], STOP_ON_FAILURE)",Chrome 69.0.3497.100,,2018-09-25 11:21:48,2018-09-25 11:22:00,"11,707s",PASSED
+Statement - If (deleteButton),Chrome 69.0.3497.100,,2018-09-25 11:22:00,2018-09-25 11:22:01,"0,960s",PASSED
+closeBrowser,Chrome 69.0.3497.100,,2018-09-25 11:22:01,2018-09-25 11:22:02,"0,637s",PASSED
+,,,,,,
+Test Cases/Home/Delete address,Chrome 69.0.3497.100,Delete an addresses,2018-09-25 11:22:04,2018-09-25 11:22:17,"13,691s",PASSED
+"Statement - deleteButton = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.callTestCase(com.kms.katalon.core.testcase.TestCaseFactory.findTestCase(Common/FindAddress), [""myAlias"":myAlias], STOP_ON_FAILURE)",Chrome 69.0.3497.100,,2018-09-25 11:22:04,2018-09-25 11:22:14,"9,866s",PASSED
+Statement - If (deleteButton),Chrome 69.0.3497.100,,2018-09-25 11:22:14,2018-09-25 11:22:15,"1,082s",PASSED
+closeBrowser,Chrome 69.0.3497.100,,2018-09-25 11:22:15,2018-09-25 11:22:15,"0,718s",PASSED

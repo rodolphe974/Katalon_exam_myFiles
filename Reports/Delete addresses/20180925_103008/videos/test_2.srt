@@ -1,0 +1,56 @@
+1
+00:00:00,001 --> 00:00:00,002
+1. Statement - deleteButton = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.callTestCase(com.kms.katalon.core.testcase.TestCaseFactory.findTestCase(Common/FindAddress), ["myAlias":myAlias], STOP_ON_FAILURE)
+
+2
+00:00:00,072 --> 00:00:00,073
+1. callTestCase
+
+3
+00:00:00,144 --> 00:00:00,144
+1. Statement - currentUrl = ""
+
+4
+00:00:00,151 --> 00:00:00,152
+5. Statement - Try
+
+5
+00:00:00,158 --> 00:00:00,159
+1. Statement - currentUrl = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getUrl()
+
+6
+00:00:00,168 --> 00:00:00,169
+2. openBrowser
+
+7
+00:00:04,977 --> 00:00:04,977
+6. maximizeWindow
+
+8
+00:00:06,102 --> 00:00:06,102
+10. Statement - currentUrl = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getUrl()
+
+9
+00:00:06,114 --> 00:00:06,115
+9. Statement - If (!(currentUrl.equals(url)))
+
+10
+00:00:06,122 --> 00:00:06,122
+1. navigateToUrl
+
+11
+00:00:07,395 --> 00:00:07,396
+5. waitForPageLoad
+
+12
+00:00:07,409 --> 00:00:07,410
+13. Statement - Try
+
+13
+00:00:07,415 --> 00:00:07,416
+1. verifyTextPresent
+
+14
+00:00:07,786 --> 00:00:07,786
+17. verifyTextPresent
+

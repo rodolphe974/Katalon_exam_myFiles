@@ -1,0 +1,12 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+Delete addresses,Firefox 62.0,Test the addresse deletion function using data driven approach with spreadsheet Addresses,2018-09-25 11:16:08,2018-09-25 11:16:44,"36,381s",PASSED
+,,,,,,
+Test Cases/Home/Delete address,Firefox 62.0,Delete an addresses,2018-09-25 11:16:08,2018-09-25 11:16:27,"19,037s",PASSED
+"Statement - deleteButton = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.callTestCase(com.kms.katalon.core.testcase.TestCaseFactory.findTestCase(Common/FindAddress), [""myAlias"":myAlias], STOP_ON_FAILURE)",Firefox 62.0,,2018-09-25 11:16:09,2018-09-25 11:16:25,"16,356s",PASSED
+Statement - If (deleteButton),Firefox 62.0,,2018-09-25 11:16:25,2018-09-25 11:16:25,"0,111s",PASSED
+closeBrowser,Firefox 62.0,,2018-09-25 11:16:25,2018-09-25 11:16:25,"0,195s",PASSED
+,,,,,,
+Test Cases/Home/Delete address,Firefox 62.0,Delete an addresses,2018-09-25 11:16:27,2018-09-25 11:16:44,"17,068s",PASSED
+"Statement - deleteButton = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.callTestCase(com.kms.katalon.core.testcase.TestCaseFactory.findTestCase(Common/FindAddress), [""myAlias"":myAlias], STOP_ON_FAILURE)",Firefox 62.0,,2018-09-25 11:16:27,2018-09-25 11:16:42,"14,813s",PASSED
+Statement - If (deleteButton),Firefox 62.0,,2018-09-25 11:16:42,2018-09-25 11:16:42,"0,064s",PASSED
+closeBrowser,Firefox 62.0,,2018-09-25 11:16:42,2018-09-25 11:16:42,"0,148s",PASSED

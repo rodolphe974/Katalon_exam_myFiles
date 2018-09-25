@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Add addresses" time="41" tests="2" failures="0" errors="0">
+   <testsuite name="Add addresses" tests="2" failures="0" errors="0" time="41" timestamp="2018-09-25 12:29:12" hostname="stagiaire - WINIB-PPSA45UJK" id="Test Suites/Add addresses">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\stagiaire\\git\\katalon_exam_myFiles\\Reports\\Add addresses\\20180925_122906"/>
+         <property name="logFiles" value="C:\\Users\\stagiaire\\git\\katalon_exam_myFiles\\Reports\\Add addresses\\20180925_122906\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="stagiaire - WINIB-PPSA45UJK"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="5.7.1.1"/>
+         <property name="browser" value="Chrome 69.0.3497.100"/>
+         <property name="hostAddress" value="192.168.56.1"/>
+         <property name="sessionId" value="c9ecccb7840b422d5154705591d1df68"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Home/Add address" classname="Test Cases/Home/Add address" status="PASSED">
+         <system-out><![CDATA[2018-09-25 12:29:12 - [TEST_CASE][PASSED] - Test Cases/Home/Add address: Test Cases/Home/Add address
+
+2018-09-25 12:29:13 - [TEST_STEP][PASSED] - Statement - alias_exists = false: null
+
+2018-09-25 12:29:13 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Common/GoToUrl' successfully
+
+2018-09-25 12:29:13 - [TEST_CASE][PASSED] - Test Cases/Common/GoToUrl: Test Cases/Common/GoToUrl
+
+2018-09-25 12:29:13 - [TEST_STEP][PASSED] - Statement - currentUrl = "": null
+
+2018-09-25 12:29:13 - [TEST_STEP][FAILED] - Statement - Try: Unable to get the url of the current window (Root cause: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'WINIB-PPSA45UJK', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: unknown)
+
+2018-09-25 12:29:13 - [TEST_STEP][FAILED] - Statement - currentUrl = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getUrl(): Unable to get the url of the current window (Root cause: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'WINIB-PPSA45UJK', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: unknown)
+
+2018-09-25 12:29:13 - [MESSAGE][WARNING] - Cannot take screenshot
+
+2018-09-25 12:29:13 - [MESSAGE][FAILED] - Unable to get the url of the current window (Root cause: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'WINIB-PPSA45UJK', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: unknown)
+
+2018-09-25 12:29:13 - [TEST_STEP][PASSED] - Statement - Catch (com.kms.katalon.core.exception.StepFailedException e): Current window's url is: 'http://automationpractice.com/index.php?controller=authentication&back=addresses'
+
+2018-09-25 12:29:13 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: 'http://automationpractice.com/index.php?controller=addresses'
+
+2018-09-25 12:29:19 - [MESSAGE][PASSED] - Browser is opened with url: 'http://automationpractice.com/index.php?controller=addresses'
+
+2018-09-25 12:29:19 - [TEST_STEP][PASSED] - maximizeWindow: Current window maximized
+
+2018-09-25 12:29:21 - [MESSAGE][PASSED] - Current window maximized
+
+2018-09-25 12:29:21 - [TEST_STEP][PASSED] - Statement - currentUrl = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getUrl(): Current window's url is: 'http://automationpractice.com/index.php?controller=authentication&back=addresses'
+
+2018-09-25 12:29:21 - [MESSAGE][PASSED] - Current window's url is: 'http://automationpractice.com/index.php?controller=authentication&back=addresses'
+
+2018-09-25 12:29:21 - [TEST_STEP][PASSED] - Statement - If (!(currentUrl.equals(url))): Wait for page load successfully
+
+2018-09-25 12:29:21 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'http://automationpractice.com/index.php?controller=addresses' successfully
+
+2018-09-25 12:29:21 - [MESSAGE][PASSED] - Navigate to 'http://automationpractice.com/index.php?controller=addresses' successfully
+
+2018-09-25 12:29:21 - [TEST_STEP][PASSED] - waitForPageLoad: Wait for page load successfully
+
+2018-09-25 12:29:21 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-09-25 12:29:21 - [TEST_STEP][PASSED] - Statement - Try: Wait for page load successfully
+
+2018-09-25 12:29:21 - [TEST_STEP][PASSED] - verifyTextPresent: Text 'Sign in' is present on page 
+
+2018-09-25 12:29:22 - [MESSAGE][PASSED] - Text 'Sign in' is present on page 
+
+2018-09-25 12:29:22 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Login/a_Sign in' is clicked on
+
+2018-09-25 12:29:23 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/a_Sign in' is clicked on
+
+2018-09-25 12:29:23 - [TEST_STEP][PASSED] - setText: Text 'bilbo.baggins@middleearth.com' is set on object 'Object Repository/Login/input_email'
+
+2018-09-25 12:29:23 - [MESSAGE][PASSED] - Text 'bilbo.baggins@middleearth.com' is set on object 'Object Repository/Login/input_email'
+
+2018-09-25 12:29:23 - [TEST_STEP][PASSED] - setText: Text 'youshallnotpass' is set on object 'Object Repository/Login/input_passwd'
+
+2018-09-25 12:29:23 - [MESSAGE][PASSED] - Text 'youshallnotpass' is set on object 'Object Repository/Login/input_passwd'
+
+2018-09-25 12:29:23 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Login/span_Sign in' is clicked on
+
+2018-09-25 12:29:24 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/span_Sign in' is clicked on
+
+2018-09-25 12:29:24 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'http://automationpractice.com/index.php?controller=addresses' successfully
+
+2018-09-25 12:29:25 - [MESSAGE][PASSED] - Navigate to 'http://automationpractice.com/index.php?controller=addresses' successfully
+
+2018-09-25 12:29:25 - [TEST_STEP][PASSED] - waitForPageLoad: Wait for page load successfully
+
+2018-09-25 12:29:25 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-09-25 12:29:25 - [TEST_STEP][PASSED] - verifyTextPresent: Text 'Sign out' is present on page 
+
+2018-09-25 12:29:25 - [MESSAGE][PASSED] - Text 'Sign out' is present on page 
+
+2018-09-25 12:29:25 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Common/GoToUrl' successfully
+
+2018-09-25 12:29:25 - [TEST_STEP][PASSED] - Statement - deleteButton = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.modifyObjectProperty(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Object Repository/Page_Addresses - My Store/span_Delete), "xpath", "equals", "//a[@title='Delete' and ../../li[1]/h3/text()='" + myAlias + "']", true): Modify property of object successfully
+
+2018-09-25 12:29:25 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-09-25 12:29:25 - [TEST_STEP][PASSED] - Statement - If (com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.waitForElementPresent(deleteButton, 2)): Object 'Object Repository/Page_Addresses - My Store/span_Delete' is not present after 2 second(s)
+
+2018-09-25 12:29:28 - [MESSAGE][WARNING] - Object 'Object Repository/Page_Addresses - My Store/span_Delete' is not present after 2 second(s)
+
+2018-09-25 12:29:28 - [TEST_STEP][PASSED] - Statement - Else: null
+
+2018-09-25 12:29:28 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Addresses - My Store/span_Add a new address' is clicked on
+
+2018-09-25 12:29:29 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Addresses - My Store/span_Add a new address' is clicked on
+
+2018-09-25 12:29:29 - [TEST_STEP][PASSED] - setText: Text '5 proudfoot str.' is set on object 'Object Repository/Page_Address - My Store/input__address1'
+
+2018-09-25 12:29:29 - [MESSAGE][PASSED] - Text '5 proudfoot str.' is set on object 'Object Repository/Page_Address - My Store/input__address1'
+
+2018-09-25 12:29:29 - [TEST_STEP][PASSED] - setText: Text 'Hobbitown' is set on object 'Object Repository/Page_Address - My Store/input__city'
+
+2018-09-25 12:29:29 - [MESSAGE][PASSED] - Text 'Hobbitown' is set on object 'Object Repository/Page_Address - My Store/input__city'
+
+2018-09-25 12:29:29 - [TEST_STEP][PASSED] - selectOptionByValue: All options with value '1' are selected in object 'Object Repository/Page_Address - My Store/select_state'  using regular expression
+
+2018-09-25 12:29:30 - [MESSAGE][PASSED] - All options with value '1' are selected in object 'Object Repository/Page_Address - My Store/select_state'  using regular expression
+
+2018-09-25 12:29:30 - [TEST_STEP][PASSED] - setText: Text '42420' is set on object 'Object Repository/Page_Address - My Store/input__postcode'
+
+2018-09-25 12:29:30 - [MESSAGE][PASSED] - Text '42420' is set on object 'Object Repository/Page_Address - My Store/input__postcode'
+
+2018-09-25 12:29:30 - [TEST_STEP][PASSED] - setText: Text '968742556687277' is set on object 'Object Repository/Page_Address - My Store/input__phone_mobile'
+
+2018-09-25 12:29:30 - [MESSAGE][PASSED] - Text '968742556687277' is set on object 'Object Repository/Page_Address - My Store/input__phone_mobile'
+
+2018-09-25 12:29:30 - [TEST_STEP][PASSED] - setText: Text 'Home' is set on object 'Object Repository/Page_Address - My Store/input__alias'
+
+2018-09-25 12:29:30 - [MESSAGE][PASSED] - Text 'Home' is set on object 'Object Repository/Page_Address - My Store/input__alias'
+
+2018-09-25 12:29:30 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Address - My Store/span_Save' is clicked on
+
+2018-09-25 12:29:31 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Address - My Store/span_Save' is clicked on
+
+2018-09-25 12:29:31 - [TEST_STEP][PASSED] - Statement - If (alias_exists): null
+
+2018-09-25 12:29:31 - [TEST_STEP][PASSED] - Statement - Else: null
+
+2018-09-25 12:29:31 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-09-25 12:29:32 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Home/Add address" classname="Test Cases/Home/Add address" status="PASSED">
+         <system-out><![CDATA[2018-09-25 12:29:34 - [TEST_CASE][PASSED] - Test Cases/Home/Add address: Test Cases/Home/Add address
+
+2018-09-25 12:29:34 - [TEST_STEP][PASSED] - Statement - alias_exists = false: null
+
+2018-09-25 12:29:34 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Common/GoToUrl' successfully
+
+2018-09-25 12:29:34 - [TEST_CASE][PASSED] - Test Cases/Common/GoToUrl: Test Cases/Common/GoToUrl
+
+2018-09-25 12:29:34 - [TEST_STEP][PASSED] - Statement - currentUrl = "": null
+
+2018-09-25 12:29:34 - [TEST_STEP][FAILED] - Statement - Try: Unable to get the url of the current window (Root cause: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'WINIB-PPSA45UJK', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: unknown)
+
+2018-09-25 12:29:34 - [TEST_STEP][FAILED] - Statement - currentUrl = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getUrl(): Unable to get the url of the current window (Root cause: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'WINIB-PPSA45UJK', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: unknown)
+
+2018-09-25 12:29:34 - [MESSAGE][WARNING] - Cannot take screenshot
+
+2018-09-25 12:29:34 - [MESSAGE][FAILED] - Unable to get the url of the current window (Root cause: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'WINIB-PPSA45UJK', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: unknown)
+
+2018-09-25 12:29:34 - [TEST_STEP][PASSED] - Statement - Catch (com.kms.katalon.core.exception.StepFailedException e): Current window's url is: 'http://automationpractice.com/index.php?controller=authentication&back=addresses'
+
+2018-09-25 12:29:34 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: 'http://automationpractice.com/index.php?controller=addresses'
+
+2018-09-25 12:29:39 - [MESSAGE][PASSED] - Browser is opened with url: 'http://automationpractice.com/index.php?controller=addresses'
+
+2018-09-25 12:29:39 - [TEST_STEP][PASSED] - maximizeWindow: Current window maximized
+
+2018-09-25 12:29:40 - [MESSAGE][PASSED] - Current window maximized
+
+2018-09-25 12:29:40 - [TEST_STEP][PASSED] - Statement - currentUrl = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getUrl(): Current window's url is: 'http://automationpractice.com/index.php?controller=authentication&back=addresses'
+
+2018-09-25 12:29:40 - [MESSAGE][PASSED] - Current window's url is: 'http://automationpractice.com/index.php?controller=authentication&back=addresses'
+
+2018-09-25 12:29:40 - [TEST_STEP][PASSED] - Statement - If (!(currentUrl.equals(url))): Wait for page load successfully
+
+2018-09-25 12:29:40 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'http://automationpractice.com/index.php?controller=addresses' successfully
+
+2018-09-25 12:29:41 - [MESSAGE][PASSED] - Navigate to 'http://automationpractice.com/index.php?controller=addresses' successfully
+
+2018-09-25 12:29:41 - [TEST_STEP][PASSED] - waitForPageLoad: Wait for page load successfully
+
+2018-09-25 12:29:42 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-09-25 12:29:42 - [TEST_STEP][PASSED] - Statement - Try: Wait for page load successfully
+
+2018-09-25 12:29:42 - [TEST_STEP][PASSED] - verifyTextPresent: Text 'Sign in' is present on page 
+
+2018-09-25 12:29:42 - [MESSAGE][PASSED] - Text 'Sign in' is present on page 
+
+2018-09-25 12:29:42 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Login/a_Sign in' is clicked on
+
+2018-09-25 12:29:43 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/a_Sign in' is clicked on
+
+2018-09-25 12:29:43 - [TEST_STEP][PASSED] - setText: Text 'bilbo.baggins@middleearth.com' is set on object 'Object Repository/Login/input_email'
+
+2018-09-25 12:29:43 - [MESSAGE][PASSED] - Text 'bilbo.baggins@middleearth.com' is set on object 'Object Repository/Login/input_email'
+
+2018-09-25 12:29:43 - [TEST_STEP][PASSED] - setText: Text 'youshallnotpass' is set on object 'Object Repository/Login/input_passwd'
+
+2018-09-25 12:29:43 - [MESSAGE][PASSED] - Text 'youshallnotpass' is set on object 'Object Repository/Login/input_passwd'
+
+2018-09-25 12:29:43 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Login/span_Sign in' is clicked on
+
+2018-09-25 12:29:44 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/span_Sign in' is clicked on
+
+2018-09-25 12:29:44 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'http://automationpractice.com/index.php?controller=addresses' successfully
+
+2018-09-25 12:29:45 - [MESSAGE][PASSED] - Navigate to 'http://automationpractice.com/index.php?controller=addresses' successfully
+
+2018-09-25 12:29:45 - [TEST_STEP][PASSED] - waitForPageLoad: Wait for page load successfully
+
+2018-09-25 12:29:45 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-09-25 12:29:45 - [TEST_STEP][PASSED] - verifyTextPresent: Text 'Sign out' is present on page 
+
+2018-09-25 12:29:45 - [MESSAGE][PASSED] - Text 'Sign out' is present on page 
+
+2018-09-25 12:29:45 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Common/GoToUrl' successfully
+
+2018-09-25 12:29:45 - [TEST_STEP][PASSED] - Statement - deleteButton = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.modifyObjectProperty(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Object Repository/Page_Addresses - My Store/span_Delete), "xpath", "equals", "//a[@title='Delete' and ../../li[1]/h3/text()='" + myAlias + "']", true): Modify property of object successfully
+
+2018-09-25 12:29:45 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-09-25 12:29:45 - [TEST_STEP][PASSED] - Statement - If (com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.waitForElementPresent(deleteButton, 2)): Object 'Object Repository/Page_Addresses - My Store/span_Delete' is not present after 2 second(s)
+
+2018-09-25 12:29:47 - [MESSAGE][WARNING] - Object 'Object Repository/Page_Addresses - My Store/span_Delete' is not present after 2 second(s)
+
+2018-09-25 12:29:47 - [TEST_STEP][PASSED] - Statement - Else: null
+
+2018-09-25 12:29:47 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Addresses - My Store/span_Add a new address' is clicked on
+
+2018-09-25 12:29:48 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Addresses - My Store/span_Add a new address' is clicked on
+
+2018-09-25 12:29:48 - [TEST_STEP][PASSED] - setText: Text '1 sauron's lair' is set on object 'Object Repository/Page_Address - My Store/input__address1'
+
+2018-09-25 12:29:48 - [MESSAGE][PASSED] - Text '1 sauron's lair' is set on object 'Object Repository/Page_Address - My Store/input__address1'
+
+2018-09-25 12:29:48 - [TEST_STEP][PASSED] - setText: Text 'Mordor' is set on object 'Object Repository/Page_Address - My Store/input__city'
+
+2018-09-25 12:29:48 - [MESSAGE][PASSED] - Text 'Mordor' is set on object 'Object Repository/Page_Address - My Store/input__city'
+
+2018-09-25 12:29:48 - [TEST_STEP][PASSED] - selectOptionByValue: All options with value '2' are selected in object 'Object Repository/Page_Address - My Store/select_state'  using regular expression
+
+2018-09-25 12:29:49 - [MESSAGE][PASSED] - All options with value '2' are selected in object 'Object Repository/Page_Address - My Store/select_state'  using regular expression
+
+2018-09-25 12:29:49 - [TEST_STEP][PASSED] - setText: Text '42422' is set on object 'Object Repository/Page_Address - My Store/input__postcode'
+
+2018-09-25 12:29:49 - [MESSAGE][PASSED] - Text '42422' is set on object 'Object Repository/Page_Address - My Store/input__postcode'
+
+2018-09-25 12:29:49 - [TEST_STEP][PASSED] - setText: Text '968742556687277' is set on object 'Object Repository/Page_Address - My Store/input__phone_mobile'
+
+2018-09-25 12:29:49 - [MESSAGE][PASSED] - Text '968742556687277' is set on object 'Object Repository/Page_Address - My Store/input__phone_mobile'
+
+2018-09-25 12:29:49 - [TEST_STEP][PASSED] - setText: Text 'Work' is set on object 'Object Repository/Page_Address - My Store/input__alias'
+
+2018-09-25 12:29:49 - [MESSAGE][PASSED] - Text 'Work' is set on object 'Object Repository/Page_Address - My Store/input__alias'
+
+2018-09-25 12:29:49 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Address - My Store/span_Save' is clicked on
+
+2018-09-25 12:29:50 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Address - My Store/span_Save' is clicked on
+
+2018-09-25 12:29:50 - [TEST_STEP][PASSED] - Statement - If (alias_exists): null
+
+2018-09-25 12:29:50 - [TEST_STEP][PASSED] - Statement - Else: null
+
+2018-09-25 12:29:50 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-09-25 12:29:52 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-09-25 12:29:12 - [TEST_SUITE][PASSED] - Add addresses: Test Cases/Home/Add address]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>
